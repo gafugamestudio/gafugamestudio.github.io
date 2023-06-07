@@ -63,6 +63,7 @@ async function getCDN(cdns) {
   for (let cdn of cdns) {
     var blocked = await isBlocked(cdn);
     if (!blocked) {
+        console.log("[CND] " + cnd);
       return cdn;
     }
   }
@@ -98,7 +99,7 @@ if (!cdn) {
     });
 }
 
-alert("Gafu Game - version v0.4");
+alert("Gafu Game - version 0.5");
 
 const instance = encodeURIComponent(origin.replace(location.origin, ''));
 
