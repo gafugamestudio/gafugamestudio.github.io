@@ -98,6 +98,8 @@ if (!cdn) {
     });
 }
 
+alert("Gafu Game - version v0.4");
+
 const instance = encodeURIComponent(origin.replace(location.origin, ''));
 
 // If we have onLoadData, we run it now
